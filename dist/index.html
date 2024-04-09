@@ -5,8 +5,47 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>17</title>
 		<link rel="icon" href="../src/images/favicon-32x32.png" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+			rel="stylesheet"
+		/>
 	</head>
 	<body>
+		<article class="card">
+			<div class="card__logo">
+				<img src="../src/images/logo.svg" alt="logo" />
+			</div>
+			<picture class="card__image">
+				<source
+					srcset="../src/images/hero-mobile.jpg"
+					media="(max-width:1000px)"
+				/>
+				<img src="../src/images/hero-desktop.jpg" alt="base-apparel" />
+			</picture>
+			<section class="card__info">
+				<img
+					class="card__info-background"
+					src="../src/images/bg-pattern-desktop.svg"
+					alt="background	"
+				/>
+				<h2 class="card__info-title-1">WE'RE</h2>
+				<h1 class="card__info-title-2">COMING</h1>
+				<h1 class="card__info-title-3">SOON</h1>
+				<p class="card__info-description">
+					Hello fellow shoppers! We're currently building our new fashion store.
+					Add your email below to stay up-to-date with announcements and our
+					launch deals.
+				</p>
+				<div class="card__info-email">
+					<p>Email Address</p>
+					<button class="card__info-email-button">
+						<img src="../src/images/icon-arrow.svg" alt="send" />
+					</button>
+				</div>
+			</section>
+		</article>
 		<script src="bundle.js"></script>
 	</body>
 </html>

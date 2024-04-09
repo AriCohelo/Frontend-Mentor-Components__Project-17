@@ -3,7 +3,117 @@
 @import 'resets.scss';
 
 body {
-	font-size: 15px;
+	font-size: 16px;
 	font-family: $Ff-primary;
-	background-color: rgb(255, 221, 0);
+}
+.card {
+	position: relative;
+	display: grid;
+	grid-template-columns: 830px 610px;
+	grid-template-rows: 100px 1fr;
+	&__logo {
+		padding-left: 10rem;
+		align-content: flex-end;
+	}
+	&__info {
+		padding: 8rem 10rem 8rem 10rem;
+		&-background {
+			position: absolute;
+			z-index: -1;
+			top: 0;
+			left: 0;
+		}
+		&-title-1 {
+			color: $Clr-Desaturated-Red;
+			font-size: 3.875rem;
+			font-weight: 300;
+			letter-spacing: 1.12375rem;
+		}
+		&-title-2,
+		&-title-3 {
+			color: $Clr-Dark-Grayish-Red;
+			font-size: 4rem;
+			letter-spacing: 1.08rem;
+			font-weight: $Fw-medium;
+		}
+		&-description {
+			color: $Clr-Desaturated-Red;
+			font-size: 1rem;
+			line-height: 1.75rem;
+			font-weight: $Fw-medium;
+		}
+		&-email {
+			p {
+				font-size: 1rem;
+				color: $Clr-Desaturated-Red;
+				font-weight: $Fw-medium;
+				margin-left: 2rem;
+			}
+			display: grid;
+			align-items: center;
+			grid-template-columns: 1fr 100px;
+			height: 3.5rem;
+			width: 30rem;
+			border: 1px solid $Clr-Desaturated-Red;
+			border-radius: 28px;
+			opacity: 0.5;
+			&-button {
+				border-radius: 28px;
+				background: $Gradient-2;
+				display: grid;
+				place-content: center;
+				border: none;
+				height: 100%;
+			}
+		}
+	}
+	&__image {
+		grid-row: span 2;
+	}
+}
+@media (max-width: 1000px) {
+	.card {
+		grid-template-columns: 1fr 375px 1fr;
+		grid-template-rows: 100px auto auto;
+		grid-template-areas:
+			'. logo .'
+			'. image .'
+			'. info .';
+		&__logo {
+			padding-left: 2rem;
+			align-content: center;
+			grid-area: logo;
+		}
+		&__image {
+			grid-area: image;
+		}
+		&__info {
+			justify-items: center;
+			padding: 4rem 2rem 4rem 2rem;
+			grid-area: info;
+			&-background {
+				display: none;
+			}
+			&-title-1 {
+				font-size: 2.5rem;
+				text-align: center;
+				grid-area: title1;
+			}
+			&-title-2,
+			&-title-3 {
+				font-size: 2.4375rem;
+				text-align: center;
+			}
+			&-description {
+				font-size: 0.875rem;
+				line-height: 1.375rem;
+				width: 19rem;
+				text-align: center;
+			}
+			&-email {
+				width: 19.4375rem;
+				height: 3rem;
+			}
+		}
+	}
 }
