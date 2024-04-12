@@ -38,12 +38,27 @@
 					Add your email below to stay up-to-date with announcements and our
 					launch deals.
 				</p>
-				<div class="card__info-email">
-					<p>Email Address</p>
+				<form class="card__info-email">
+					<input
+						id="email"
+						required
+						id="email"
+						type="email"
+						placeholder="Email Adress"
+					/>
 					<button class="card__info-email-button">
 						<img src="../src/images/icon-arrow.svg" alt="send" />
 					</button>
-				</div>
+					<label for="email"></label>
+				</form>
+				<form class="card__info-email-error">
+					<input required id="email" type="email" placeholder="Email Adress" />
+					<img src="../src/images/icon-error.svg" alt="error" />
+					<button class="card__info-email-button">
+						<img src="../src/images/icon-arrow.svg" alt="send" />
+					</button>
+					<label for="email"></label>
+				</form>
 			</section>
 		</article>
 		<script src="bundle.js"></script>
