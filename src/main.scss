@@ -50,7 +50,7 @@ body {
 		}
 		&-email {
 			height: 3.5rem;
-			width: 30rem;
+			width: 27.8125rem;
 			border: 1px solid $Clr-Desaturated-Red;
 			border-radius: 28px;
 			opacity: 0.7;
@@ -67,6 +67,7 @@ body {
 				margin-left: 2rem;
 				border: none;
 				outline: none;
+				width: 60%;
 			}
 			&-button {
 				border-radius: 28px;
@@ -90,7 +91,7 @@ body {
 .card__info {
 	&-email-error {
 		height: 3.5rem;
-		width: 30rem;
+		width: 27.8125rem;
 		border: 2px solid $Clr-Soft-Red;
 		border-radius: 28px;
 		opacity: 1;
@@ -116,6 +117,7 @@ body {
 			margin-left: 2rem;
 			border: none;
 			outline: none;
+			width: 60%;
 		}
 		& button {
 			border-radius: 28px;
@@ -170,6 +172,7 @@ body {
 				width: 19rem;
 				text-align: center;
 				margin-bottom: 2rem;
+				margin-top: 1.3rem;
 			}
 			&-email {
 				width: 100%;
